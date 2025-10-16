@@ -41,7 +41,12 @@ export function AnimatedGridPattern({
   const id = useId();
   const containerRef = useRef(null);
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
-  const [squares, setSquares] = useState(() => generateSquares(numSquares));
+  const [squares, setSquares] = useState(() => 
+    Array.from({ length: numSquares }, (_, i) => ({
+      id: i,
+      pos: [0, 0], // Initial position, will be updated when dimensions are available
+    }))
+  );
 
   const getPos = useCallback(() => {
     return [
