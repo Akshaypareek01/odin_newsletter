@@ -1,0 +1,9 @@
+/* Custom CSS for Prowplus Website */
+
+/* Add your custom styles here */
+/* This file is for styles that can't be achieved with Tailwind classes */
+
+/* Force font size for Resources and Pricing navigation items */
+.nav-link-text {
+  font-size: 1.125rem !important; /* 18px - same as text-lg */
+}
