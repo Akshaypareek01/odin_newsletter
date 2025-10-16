@@ -1,5 +1,6 @@
 import { TailwindIndicator } from "@/components/tailwind-indicator";
 import { ThemeProvider } from "@/components/theme-provider";
+import { GoogleAnalytics } from "@/components/google-analytics";
 import { cn, constructMetadata } from "@/lib/utils";
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
@@ -34,6 +35,7 @@ export default function RootLayout({
         )}
         suppressHydrationWarning
       >
+        <GoogleAnalytics trackingId="G-PE9HP1JDS8" />
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
