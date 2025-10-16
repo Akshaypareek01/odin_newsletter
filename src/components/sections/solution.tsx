@@ -90,15 +90,15 @@ export default function Component() {
       className="bg-neutral-100 dark:bg-neutral-900"
     > 
     
-  <div>
-    <SparklesText sparklesCount={7} className="text-center text-2xl font-medium leading-tight text-foreground" > Highlights of this year</SparklesText>
-    <br />
-    <p className="text-justify text-lg text-muted-foreground">This year has been a landmark in our journey — a blend of innovation, collaboration, and purposeful creation.
-
-      <br /><br />
-      
-      Here are some of the projects that defined our evolution from <br /> <Highlighter action="underline" color="#FF9800"> The Odin </Highlighter> to <Highlighter action="underline" color="#FF9800"> Odin AI </Highlighter>
-    </p>
+  <div className="flex flex-col items-center justify-center text-center space-y-4">
+    <SparklesText sparklesCount={7} className="text-2xl font-medium leading-tight text-foreground">
+      Highlights of this year
+    </SparklesText>
+    
+    <div className="text-lg text-muted-foreground max-w-4xl mx-auto space-y-4">
+      <p>This year has been a landmark in our journey — a blend of innovation, collaboration, and purposeful creation.</p>
+      <p>Here are some of the projects that defined our evolution from <Highlighter action="underline" color="#FF9800"> The Odin </Highlighter> to <Highlighter action="underline" color="#FF9800"> Odin AI </Highlighter></p>
+    </div>
   </div>
 
 

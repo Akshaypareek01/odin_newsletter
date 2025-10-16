@@ -49,40 +49,34 @@ const problems = [
 
 export default function Component() {
   return (
-  
-   <div className="bg-background relative  w-full overflow-hidden">
-     <Section className="absolute" id="whats-in-it-for-you" >
-    
-     <SparklesText sparklesCount={4} className="text-center text-3xl font-medium leading-tight text-foreground" > What’s In It For You</SparklesText>
-      <br />
-      <p className="text-justify text-lg text-muted-foreground">At Odin AI, we believe <Highlighter action="underline" color="#FF9800"> AI should work for your business</Highlighter>,  not overwhelm it. 
-        <br /><br />
-      In a world flooded with hype, we focus on what truly matters — practical, results-driven intelligence tailored to your goals.
-      <br /><br />
-      we cut through the noise to bring you real, results-driven AI — solutions that automate workflows, improve decisions, 
-      and deliver measurable business impact. Our approach is custom-fit, not one-size-fits-all, ensuring seamless integration 
-      with your existing systems and scalable growth. 
-      <br /><br />
-      Every innovation we build is designed for ROI — Return on Intelligence, turning advanced technology into higher efficiency, smarter insights, and faster performance.
-      <br /><br />
+    <div className="bg-background relative w-full overflow-hidden">
+      <Section id="whats-in-it-for-you">
+        <div className="flex flex-col items-center justify-center text-center space-y-6">
+          <SparklesText sparklesCount={4} className="text-3xl font-medium leading-tight text-foreground">
+            What's In It For You
+          </SparklesText>
+          
+          <div className="text-lg text-muted-foreground max-w-4xl mx-auto space-y-4">
+            <p>At Odin AI, we believe <Highlighter action="underline" color="#FF9800"> AI should work for your business</Highlighter>, not overwhelm it.</p>
+            <p>In a world flooded with hype, we focus on what truly matters — practical, results-driven intelligence tailored to your goals.</p>
+            <p>We cut through the noise to bring you real, results-driven AI — solutions that automate workflows, improve decisions, 
+            and deliver measurable business impact. Our approach is custom-fit, not one-size-fits-all, ensuring seamless integration 
+            with your existing systems and scalable growth.</p>
+            <p>Every innovation we build is designed for ROI — Return on Intelligence, turning advanced technology into higher efficiency, smarter insights, and faster performance.</p>
+          </div>
+        </div>
+      </Section>
       
-      </p>
-      
-     
-     </Section>
       <FlickeringGrid
-        className="relative inset-0 z-0 [mask-image:radial-gradient(450px_circle_at_center,white,transparent)]"
+        className="absolute inset-0 z-0 [mask-image:radial-gradient(450px_circle_at_center,white,transparent)]"
         squareSize={4}
         gridGap={6}
         color="#60A5FA"
         maxOpacity={0.3}
         flickerChance={0.1}
-        height={900}
+        height={600}
         width={400}
       />
-
-    
     </div>
-   
   );
 }

@@ -47,13 +47,13 @@ export default function Component() {
         <div className="relative grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
           {problems.map((problem, index) => (
             <BlurFade key={index} delay={0.2 + index * 0.2} inView>
-              <Card className="bg-background/80 backdrop-blur-sm border border-border/50 shadow-none">
-                <CardContent className="p-6 space-y-4">
+              <Card className="bg-background/80 backdrop-blur-sm border border-border/50 shadow-none h-full flex flex-col">
+                <CardContent className="p-6 space-y-4 flex-1 flex flex-col">
                   <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
                     <problem.icon className="w-6 h-6 text-primary" />
                   </div>
                   <h4 className="text-xl font-semibold">{problem.title}</h4>
-                  <p className="text-muted-foreground">{problem.description}</p>
+                  <p className="text-muted-foreground flex-1">{problem.description}</p>
                 </CardContent>
                 <BorderBeam
         duration={15}
