@@ -45,10 +45,12 @@ export default function Header() {
           title="brand-logo"
           className="relative mr-6 flex items-center space-x-2"
         >
-          <img
+          <Image
             src="/pp_icons.png"
             alt="Logo"
             className="h-[60px] w-auto object-contain"
+            width={60}
+            height={60}
           />
           <span className="font-bold text-xl" style={{ fontWeight: "700" }}>PROWPLUS</span>
         </Link>

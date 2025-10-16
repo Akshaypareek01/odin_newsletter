@@ -76,18 +76,21 @@ export async function GET(req: NextRequest) {
           </div>
         </div>
 
-        <img
-          src={`${siteConfig.url}/dashboard.png`}
-          alt="Prowplus Dashboard"
-          width={900}
+        <div
           style={{
             position: "relative",
             bottom: -160,
+            width: 900,
+            height: "auto",
             aspectRatio: "auto",
             border: "4px solid lightgray",
             background: "lightgray",
             borderRadius: 20,
             zIndex: 1,
+            backgroundImage: `url(${siteConfig.url}/dashboard.png)`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
           }}
         />
       </div>

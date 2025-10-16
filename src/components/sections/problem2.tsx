@@ -53,7 +53,7 @@ export default function Component() {
       <Section id="whats-in-it-for-you">
         <div className="flex flex-col items-center justify-center text-center space-y-6">
           <SparklesText sparklesCount={4} className="text-3xl font-medium leading-tight text-foreground">
-            What's In It For You
+            What&apos;s In It For You
           </SparklesText>
           
           <div className="text-lg text-muted-foreground max-w-4xl mx-auto space-y-4">
